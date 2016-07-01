@@ -5,11 +5,16 @@ package pl.aliberadzki.payroll;
  */
 public class HourlyClassification implements PaymentClassification {
     private double itsRate;
+
     public HourlyClassification(double itsRate) {
         this.itsRate = itsRate;
     }
 
     public double getRate() {
         return this.itsRate;
+    }
+
+    public void setRate(double rate) {
+        this.itsRate = itsRate;
     }
 }

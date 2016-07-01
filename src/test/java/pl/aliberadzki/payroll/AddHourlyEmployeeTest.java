@@ -21,7 +21,6 @@ public class AddHourlyEmployeeTest {
         PaymentClassification pc = e.getClassification();
         HourlyClassification hc = (HourlyClassification)pc;
         assertNotNull(hc);
-
         assertEquals(70.0, hc.getRate(), 0.01);
 
         PaymentSchedule ps = e.getSchedule();
