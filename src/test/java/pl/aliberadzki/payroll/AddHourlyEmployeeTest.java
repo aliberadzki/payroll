@@ -24,7 +24,7 @@ public class AddHourlyEmployeeTest {
         assertEquals(70.0, hc.getRate(), 0.01);
 
         PaymentSchedule ps = e.getSchedule();
-        HourlySchedule hs = (HourlySchedule) ps;
+        WeeklySchedule hs = (WeeklySchedule) ps;
         assertNotNull(hs);
 
         PaymentMethod pm = e.getMethod();

@@ -3,5 +3,5 @@ package pl.aliberadzki.payroll;
 /**
  * Created by aliberadzki on 01.07.16.
  */
-public class HourlySchedule implements PaymentSchedule {
+public class WeeklySchedule implements PaymentSchedule {
 }
