@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 /**
  * Created by aliberadzki on 02.07.16.
  */
-public class AddTimeCardTest {
+public class AddTimeCardTransactionTest {
 
     @Test
     public void testAddTimeCardTransaction() throws Exception {
@@ -17,7 +17,7 @@ public class AddTimeCardTest {
         t.execute();
 
 
-        Transaction tct = new AddTimeCard(20160702, 8.0, empId);
+        Transaction tct = new AddTimeCardTransaction(20160702, 8.0, empId);
         tct.execute();
 
         Employee e = PayrollDatabase.instance().getEmployee(empId);

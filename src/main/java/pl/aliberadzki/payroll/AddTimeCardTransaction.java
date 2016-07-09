@@ -3,12 +3,12 @@ package pl.aliberadzki.payroll;
 /**
  * Created by aliberadzki on 02.07.16.
  */
-public class AddTimeCard implements Transaction {
+public class AddTimeCardTransaction implements Transaction {
     private int itsDate;
     private double itsHours;
     private int itsEmpId;
 
-    public AddTimeCard(int date, double hours, int empId) {
+    public AddTimeCardTransaction(int date, double hours, int empId) {
         this.itsDate = date;
         this.itsHours = hours;
         this.itsEmpId = empId;
