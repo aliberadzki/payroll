@@ -10,9 +10,11 @@ public class PayrollDatabase {
 
     private static PayrollDatabase instance = null;
     private Map<Integer, Employee> itsEmployees;
+    private Map<Integer, Employee> itsUnionMembers;
 
     private PayrollDatabase() {
         this.itsEmployees = new HashMap<Integer, Employee>();
+        this.itsUnionMembers = new HashMap<Integer, Employee>();
     }
 
     public static PayrollDatabase instance() {
@@ -36,5 +38,13 @@ public class PayrollDatabase {
 
     public void deleteEmployee(int empid) {
         itsEmployees.remove(empid);
+    }
+
+    public void addUnionMember(int memberId, Employee e) {
+        this.itsUnionMembers.put(memberId, e);
+    }
+
+    public Employee getUnionMember(int memberId) {
+        return itsUnionMembers.get(memberId);
     }
 }

@@ -11,6 +11,7 @@ public class RegularEmployee implements Employee {
     private PaymentClassification itsPaymentClassification;
     private PaymentSchedule itsPaymentSchedule;
     private PaymentMethod itsPaymentMethod;
+    private Affiliation itsAffiliation;
 
     public RegularEmployee(int empId, String name, String address) {
         this.itsAddress = address;
@@ -51,6 +52,16 @@ public class RegularEmployee implements Employee {
     @Override
     public void setMethod(PaymentMethod pm) {
         this.itsPaymentMethod = pm;
+    }
+
+    @Override
+    public void setAffiliation(Affiliation a) {
+        this.itsAffiliation = a;
+    }
+
+    @Override
+    public Affiliation getAffiliation() {
+        return this.itsAffiliation;
     }
 
     @Override

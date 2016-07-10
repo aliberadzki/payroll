@@ -20,4 +20,9 @@ public interface Employee {
     void setSchedule(PaymentSchedule ps);
 
     void setMethod(PaymentMethod pm);
+
+    void setAffiliation(Affiliation ua);
+
+    Affiliation getAffiliation();
+
 }
